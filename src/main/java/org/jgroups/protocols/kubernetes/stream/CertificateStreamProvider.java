@@ -123,7 +123,7 @@ public class CertificateStreamProvider extends BaseStreamProvider {
             if (log.isLoggable(Level.WARNING)) {
                 log.log(Level.WARNING, "ca cert file undefined");
             }
-            return InsecureStreamProvider.INSECURE_TRUST_MANAGERS;
+            return TrustManagers.INSECURE_TRUST_MANAGERS;
         }
     }
 
